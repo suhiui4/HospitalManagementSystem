@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HospitalManagementSystem';
+  someValue:string="";
+  someValues:Array<string>=new Array<string>();
+  handleClick(){
+    this.someValues.push(this.someValue);
+    this.someValue="";
+  }
 }
